@@ -4,7 +4,7 @@
   </head>
   <body>
     <h1>Pure video elements</h1>
-    <h2>autoplay</h2>
+    <h2>autoplay=1 mute=0</h2>
     <video width="640" height="360" controls autoplay>
       <source
         src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
@@ -12,7 +12,15 @@
       />
       <source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm" />
     </video>
-    <h2>non autoplay</h2>
+    <h2>autoplay=1 mute=1</h2>
+    <video width="640" height="360" controls autoplay mute>
+      <source
+        src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        type="video/mp4"
+      />
+      <source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm" />
+    </video>
+    <h2>autoplay=0 mute=0</h2>
     <video width="640" height="360" controls>
       <source
         src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
